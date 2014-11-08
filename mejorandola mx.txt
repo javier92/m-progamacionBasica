@@ -1,0 +1,49 @@
+Prepocesadores css 
+
+	stylus
+
+	sass
+
+	less
+
+
+Frameworks frontend
+	foudantion
+
+	boostrap
+
+	pure
+
+
+developer tools
+
+
+Templates javascript
+
+	uderscore,js
+
+	mustache.github.com
+
+	jade
+
+backbone
+angular
+ember
+
+
+
+require.js
+browserify
+grunt
+gulp
+
+
+test ab7
+
+aquisition
+activision
+retencion
+voz a voz
+retorno de inversion
+
+mailguns
