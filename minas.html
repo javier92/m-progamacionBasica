@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Campo Minado</title>
+</head>
+<body>
+	<h1>Campo Minado</h1>
+	<script type="text/javascript">
+		
+		function boom(){
+			alert("BOOM!!");
+			document.write("<h1>Boom! Elegistes una area minada :( </h1>")
+		}
+
+		function ganaste(){
+			document.write("<h1>Eres un Ganador :)</h1>")
+
+		}
+
+		// = 1 hay bomba, = 0 no hay bomba
+		var campo = 
+		[	[1,0,0],	
+			[0,1,0],	
+			[1,1,1]
+		];
+
+		var textos = ["Cesped","Bomba"]
+
+		var x, y;
+
+		alert("estas en un campo minado \n" + "Elige una posición entre el 0 y el 2 para  y para y")
+
+		x = prompt("Posición en X (entre 0 y 2)");
+		y = prompt("Posición en y (entre 0 y 2)");
+
+
+		if(x <=2 && y <=2){	
+			var posicion = campo[x][y];
+			document.write("Elegistes " + textos[posicion]);
+
+			if (posicion == 1) {
+				boom();
+			}
+			else{
+				ganaste();
+			}
+		}
+		else{
+			document.write("Te salistes del campo");
+			boom();
+		}
+
+
+		//if(campo[1],[0] == 1)
+		//{
+		//	explosion();
+		//}
+		//else{
+		//	ganaste();
+		//}
+	</script>
+</body>
+</html>
